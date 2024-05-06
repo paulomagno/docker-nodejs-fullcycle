@@ -22,6 +22,7 @@ services:
     tty: true  
     volumes:
       - .:/usr/src/app
+    command: bash -c "npm install && node index.js"  # Comando para instalar dependências e iniciar o servidor Node.js
     networks:
       - fullcycle
   db:
